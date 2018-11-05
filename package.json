@@ -1,0 +1,24 @@
+{
+  "name": "unmix",
+  "version": "0.0.1",
+  "description": "Undo the so-called Jaksel code mixing",
+  "main": "src/unmix.js",
+  "files": [
+    "src/unmix.js",
+    "test/example.js"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "~5.2.0"
+  },
+  "scripts": {
+    "test": "mocha test/test.js"
+  },
+  "author": "Ariya Hidayat",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ariya/unmix.git"
+  },
+  "license": "MIT",
+  "runkitExampleFilename": "test/example.js"
+}
