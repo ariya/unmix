@@ -47,6 +47,7 @@
 
     var phraseDict = {
         'admission fee': 'biaya masuk',
+        'basically': 'pada dasarnya',
         'instead of': 'alih-alih',
         'like this': 'seperti ini',
         'like that': 'seperti itu',
