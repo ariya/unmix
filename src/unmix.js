@@ -18,6 +18,7 @@
     var wordDict = {
         'actually': 'sebenarnya',
         'arrange': 'atur',
+        'basically': 'pada dasarnya',
         'better': 'lebih bagus',
         'breakfast': 'sarapan',
         'challenging': 'menantang',
@@ -47,7 +48,6 @@
 
     var phraseDict = {
         'admission fee': 'biaya masuk',
-        'basically': 'pada dasarnya',
         'instead of': 'alih-alih',
         'like this': 'seperti ini',
         'like that': 'seperti itu',
