@@ -25,6 +25,7 @@ it('should translate popular words', function() {
     assert.strictEqual(unmix.undo('Kita maunya yang serba simple'), 'Kita maunya yang serba sederhana');
     assert.strictEqual(unmix.undo('Something banget lho!'), 'Sesuatu banget lho!');
     assert.strictEqual(unmix.undo('Submit aja idenya ke panitia.'), 'Ajukan aja idenya ke panitia.');
+    assert.strictEqual(unmix.undo('Basically, saya tidak setuju.'), 'Pada dasarnya, saya tidak setuju.');
 });
 
 it('should undo well-known combos', function() {

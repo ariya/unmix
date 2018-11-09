@@ -18,6 +18,7 @@
     var wordDict = {
         'actually': 'sebenarnya',
         'arrange': 'atur',
+        'basically': 'pada dasarnya',
         'better': 'lebih bagus',
         'breakfast': 'sarapan',
         'challenging': 'menantang',
