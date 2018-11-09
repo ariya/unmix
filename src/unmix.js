@@ -63,6 +63,11 @@
         'which is': 'yang'
     };
 
+    function localize(dict) {
+        wordDict = Object.assign(wordDict, dict.wordDict);
+        phraseDict = Object.assign(phraseDict, dict.phraseDict);
+    }
+
     function translate(word) {
         var key = word.toLowerCase();
         var result = wordDict[key];
@@ -194,7 +199,9 @@
         return output;
     }
 
+    exports.dict = { wordDict, phraseDict };
     exports.undo = undo;
+    exports.localize = localize;
     exports.version = '0.0.1'; // sync with package.json
 
 }));

@@ -1,6 +1,12 @@
 var assert = require('assert');
 var unmix = require('../src/unmix.js');
 
+// locale test
+
+var unmixBekasi = require('../src/locale/unmix.bekasi.js');
+
+unmix.localize(unmixBekasi);
+
 it('should translate popular words', function() {
     assert.strictEqual(unmix.undo('Bisa arrange sendiri?'), 'Bisa atur sendiri?');
     assert.strictEqual(unmix.undo('Actually, nggak sulit kok bikinnya'), 'Sebenarnya, nggak sulit kok bikinnya');
@@ -25,6 +31,9 @@ it('should translate popular words', function() {
     assert.strictEqual(unmix.undo('Kita maunya yang serba simple'), 'Kita maunya yang serba sederhana');
     assert.strictEqual(unmix.undo('Something banget lho!'), 'Sesuatu banget lho!');
     assert.strictEqual(unmix.undo('Submit aja idenya ke panitia.'), 'Ajukan aja idenya ke panitia.');
+    
+    // locale bekasi
+    assert.strictEqual(unmix.undo('He eh, Gua denger sih Clara paling demen makan ini'), 'Iya, Gua denger sih Clara paling suka makan ini');
 });
 
 it('should undo well-known combos', function() {
@@ -42,6 +51,10 @@ it('should undo well-known combos', function() {
     assert.strictEqual(unmix.undo('Udah nggak so new lagi'), 'Udah nggak berapa baru lagi');
     assert.strictEqual(unmix.undo('jalannya sih supposed to be sudah lancar'), 'jalannya sih seharusnya sudah lancar');
     assert.strictEqual(unmix.undo('App yang itu, which is dibikin kita juga'), 'App yang itu, yang dibikin kita juga');
+
+    // locale bekasi
+    assert.strictEqual(unmix.undo('Jangan, ini udah kagak semenggah dimakan'), 'Jangan, ini udah tidak layak dimakan');
+    assert.strictEqual(unmix.undo('Kok jadi makin kagak danta sih sekarang'), 'Kok jadi makin tidak jelas sih sekarang');
 });
 
 it('should handle prefixes', function() {
@@ -50,6 +63,9 @@ it('should handle prefixes', function() {
     assert.strictEqual(unmix.undo('Buat apa ngecompare sama orang lain?'), 'Buat apa bandingkan sama orang lain?');
     assert.strictEqual(unmix.undo('Gimana ya ngedelete appnya?'), 'Gimana ya menghapus appnya?');
     assert.strictEqual(unmix.undo('sulit nge-improve yang satu itu'), 'sulit memperbaiki yang satu itu');
+
+    // locale bekasi
+    assert.strictEqual(unmix.undo('Jangan kebiasaan nge-goroh'), 'Jangan kebiasaan bohong');
 });
 
 it('should remove superfluous phrases', function() {
