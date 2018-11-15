@@ -31,6 +31,7 @@
         'guys': 'teman-teman',
         'literally': 'benar-benar',
         'lunch': 'makan siang',
+        'measurable': 'dapat diukur',
         'mostly': 'kebanyakan',
         'ngeadd': 'menambah',
         'ngecreate': 'membuat',
