@@ -2,6 +2,10 @@ var assert = require('assert');
 var unmix = require('../src/unmix.js');
 
 it('should translate popular words', function() {
+    // Sorted based on the tackled words
+
+    // A-F
+    assert.strictEqual(unmix.undo('Basically, saya tidak setuju.'), 'Pada dasarnya, saya tidak setuju.');
     assert.strictEqual(unmix.undo('Bisa arrange sendiri?'), 'Bisa atur sendiri?');
     assert.strictEqual(unmix.undo('Actually, nggak sulit kok bikinnya'), 'Sebenarnya, nggak sulit kok bikinnya');
     assert.strictEqual(unmix.undo('Produk kita sih masih better'), 'Produk kita sih masih lebih bagus');
@@ -12,12 +16,16 @@ it('should translate popular words', function() {
     assert.strictEqual(unmix.undo('Dinner di Kemvil mau?'), 'Makan malam di Kemvil mau?');
     assert.strictEqual(unmix.undo('Even, bosnya juga nggak pakai!'), 'Bahkan, bosnya juga nggak pakai!');
     assert.strictEqual(unmix.undo('Mereka jadi excited sekali!'), 'Mereka jadi semangat sekali!');
+
+    // G-M
     assert.strictEqual(unmix.undo('Jadi gini gaes!'), 'Jadi gini teman-teman!');
     assert.strictEqual(unmix.undo('Jadi gini guys!'), 'Jadi gini teman-teman!');
     assert.strictEqual(unmix.undo('Guys, kapan nih?'), 'Teman-teman, kapan nih?');
     assert.strictEqual(unmix.undo('Kantornya literally di Jaksel'), 'Kantornya benar-benar di Jaksel');
     assert.strictEqual(unmix.undo('Lunch di Citos lagi?'), 'Makan siang di Citos lagi?');
     assert.strictEqual(unmix.undo('Mereka mostly kerjanya ngganggur'), 'Mereka kebanyakan kerjanya ngganggur');
+
+    // N-Z
     assert.strictEqual(unmix.undo('Banyak obstacle banyak serunya juga!'), 'Banyak halangan banyak serunya juga!');
     assert.strictEqual(unmix.undo('Lebih prefer Windows sih daripada Mac.'), 'Lebih milih Windows sih daripada Mac.');
     assert.strictEqual(unmix.undo('Terus, perlu requirement apa aja?'), 'Terus, perlu persyaratan apa aja?');
@@ -25,7 +33,6 @@ it('should translate popular words', function() {
     assert.strictEqual(unmix.undo('Kita maunya yang serba simple'), 'Kita maunya yang serba sederhana');
     assert.strictEqual(unmix.undo('Something banget lho!'), 'Sesuatu banget lho!');
     assert.strictEqual(unmix.undo('Submit aja idenya ke panitia.'), 'Ajukan aja idenya ke panitia.');
-    assert.strictEqual(unmix.undo('Basically, saya tidak setuju.'), 'Pada dasarnya, saya tidak setuju.');
 });
 
 it('should undo well-known combos', function() {
