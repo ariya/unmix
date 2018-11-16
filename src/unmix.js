@@ -54,6 +54,7 @@
         'like that': 'seperti itu',
         'literally': 'benar-benar',
         'make sense': 'masuk akal',
+        'makes sense': 'masuk akal',
         'next time': 'lain kali',
         'next week': 'minggu depan',
         'parking fee': 'ongkos parkir',

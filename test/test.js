@@ -40,6 +40,7 @@ it('should undo well-known combos', function() {
     assert.strictEqual(unmix.undo('Nggak pakai admission fee kok!'), 'Nggak pakai biaya masuk kok!');
     assert.strictEqual(unmix.undo('Instead of Google, doi pakai Bing.'), 'Alih-alih Google, doi pakai Bing.');
     assert.strictEqual(unmix.undo('Alasannya udah nggak make sense!'), 'Alasannya udah nggak masuk akal!');
+    assert.strictEqual(unmix.undo('Makes sense nggak sih?'), 'Masuk akal nggak sih?');
     assert.strictEqual(unmix.undo('Deploynya harus like this'), 'Deploynya harus seperti ini');
     assert.strictEqual(unmix.undo('Deploynya harus like that'), 'Deploynya harus seperti itu');
     assert.strictEqual(unmix.undo('Nggak sempat nih, next time aja ya!'), 'Nggak sempat nih, lain kali aja ya!');
