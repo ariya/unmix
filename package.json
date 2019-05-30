@@ -9,10 +9,12 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "mocha": "~5.2.0"
+    "mocha": "~5.2.0",
+    "prettier": "~1.17.1"
   },
   "scripts": {
-    "test": "mocha test/test.js"
+    "test": "mocha test/test.js && prettier --check src/unmix.js",
+    "format": "prettier --write src/unmix.js"
   },
   "author": "Ariya Hidayat",
   "repository": {
@@ -20,5 +22,10 @@
     "url": "https://github.com/ariya/unmix.git"
   },
   "license": "MIT",
-  "runkitExampleFilename": "test/example.js"
+  "runkitExampleFilename": "test/example.js",
+  "prettier": {
+    "tabWidth": 4,
+    "singleQuote": true,
+    "quoteProps": "preserve"
+  }
 }

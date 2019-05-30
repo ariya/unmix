@@ -12,7 +12,7 @@
     } else {
         factory((root.unmix = {}));
     }
-}(this, function(exports) {
+})(this, function(exports) {
     'use strict';
 
     var wordDict = {
@@ -129,7 +129,7 @@
                     }
                     start = pos;
                     part = ch;
-                    state = (ch === ' ') ? 0 : 1;
+                    state = ch === ' ' ? 0 : 1;
                     break;
                 default:
                     break;
@@ -156,20 +156,29 @@
             });
         }
 
-        scan(input, function(token) {            tokens.push(token);
+        scan(input, function(token) {
+            tokens.push(token);
             var str = token.value;
             var pos = token.pos;
             for (var i = 0; i < 3; i++) {
                 var translated = translate(str);
                 if (translated !== str) {
-                    patch(pos, token.pos - pos + token.value.length, translated);
+                    patch(
+                        pos,
+                        token.pos - pos + token.value.length,
+                        translated
+                    );
                     break;
                 }
                 if (str.toLowerCase().substr(0, 6) === 'nge - ') {
                     str = str.substr(0, 3) + str.substr(6); // "nge - add" -> "ngeadd"
                     translated = translate(str);
                     if (translated !== str) {
-                        patch(pos, token.pos - pos + token.value.length, translated);
+                        patch(
+                            pos,
+                            token.pos - pos + token.value.length,
+                            translated
+                        );
                         break;
                     }
                 }
@@ -199,5 +208,4 @@
 
     exports.undo = undo;
     exports.version = '0.0.1'; // sync with package.json
-
-}));
+});
