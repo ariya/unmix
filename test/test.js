@@ -16,6 +16,7 @@ it('should translate popular words', function() {
     assert.strictEqual(unmix.undo('Dinner di Kemvil mau?'), 'Makan malam di Kemvil mau?');
     assert.strictEqual(unmix.undo('Even, bosnya juga nggak pakai!'), 'Bahkan, bosnya juga nggak pakai!');
     assert.strictEqual(unmix.undo('Mereka jadi excited sekali!'), 'Mereka jadi semangat sekali!');
+    assert.strictEqual(unmix.undo('Acaranya kita start sekarang aja gimana?'), 'Acaranya kita mulai sekarang aja gimana?');
 
     // G-M
     assert.strictEqual(unmix.undo('Jadi gini gaes!'), 'Jadi gini teman-teman!');
@@ -52,6 +53,7 @@ it('should undo well-known combos', function() {
     assert.strictEqual(unmix.undo('Udah nggak so new lagi'), 'Udah nggak berapa baru lagi');
     assert.strictEqual(unmix.undo('jalannya sih supposed to be sudah lancar'), 'jalannya sih seharusnya sudah lancar');
     assert.strictEqual(unmix.undo('App yang itu, which is dibikin kita juga'), 'App yang itu, yang dibikin kita juga');
+    assert.strictEqual(unmix.undo('Startnya acara kapan jadinya?'), 'Mulainya acara kapan jadinya?');
 });
 
 it('should handle prefixes', function() {
