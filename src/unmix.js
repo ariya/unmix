@@ -44,6 +44,7 @@
         'requirements': 'persyaratan',
         'simple': 'sederhana',
         'something': 'sesuatu',
+        'start': 'mulai',
         'submit': 'ajukan'
     };
 
@@ -62,6 +63,7 @@
         'so damn easy': 'amat sangat gampang',
         'so far': 'sejauh ini',
         'so new': 'berapa baru',
+        'startnya': 'mulainya',
         'supposed to be': 'seharusnya',
         'which is': 'yang'
     };
