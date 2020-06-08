@@ -1,5 +1,0 @@
-sudo: false
-language: node_js
-script: "npm test"
-node_js:
-  - "node"
