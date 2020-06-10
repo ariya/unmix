@@ -22,6 +22,8 @@ it('should translate popular words', function() {
     assert.strictEqual(unmix.undo('Jadi gini gaes!'), 'Jadi gini teman-teman!');
     assert.strictEqual(unmix.undo('Jadi gini guys!'), 'Jadi gini teman-teman!');
     assert.strictEqual(unmix.undo('Guys, kapan nih?'), 'Teman-teman, kapan nih?');
+    assert.strictEqual(unmix.undo('Duh, nggak usah ikut men-judge deh'), 'Duh, nggak usah ikut menghakimi deh');
+    assert.strictEqual(unmix.undo('Duh, nggak usah ikut ngejudge deh'), 'Duh, nggak usah ikut menghakimi deh');
     assert.strictEqual(unmix.undo('Kantornya literally di Jaksel'), 'Kantornya benar-benar di Jaksel');
     assert.strictEqual(unmix.undo('Lunch di Citos lagi?'), 'Makan siang di Citos lagi?');
     assert.strictEqual(unmix.undo('Nggak measurable kerjanya!'), 'Nggak dapat diukur kerjanya!');

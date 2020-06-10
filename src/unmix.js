@@ -32,12 +32,14 @@
         'literally': 'benar-benar',
         'lunch': 'makan siang',
         'measurable': 'dapat diukur',
+        'menjudge': 'menghakimi',
         'mostly': 'kebanyakan',
         'ngeadd': 'menambah',
         'ngecreate': 'membuat',
         'ngecompare': 'bandingkan',
         'ngedelete': 'menghapus',
         'ngeimprove': 'memperbaiki',
+        'ngejudge': 'menghakimi',
         'obstacle': 'halangan',
         'prefer': 'milih',
         'requirement': 'persyaratan',
@@ -172,7 +174,11 @@
                     );
                     break;
                 }
-                if (str.toLowerCase().substr(0, 6) === 'nge - ') {
+                if (
+                    str.toLowerCase().substr(0, 6) === 'nge - ' ||
+                    str.toLowerCase().substr(0, 6) === 'men - '
+                ) {
+                    console.log(str);
                     str = str.substr(0, 3) + str.substr(6); // "nge - add" -> "ngeadd"
                     translated = translate(str);
                     if (translated !== str) {
