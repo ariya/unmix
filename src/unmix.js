@@ -179,7 +179,6 @@
                     str.toLowerCase().substr(0, 6) === 'nge - ' ||
                     str.toLowerCase().substr(0, 6) === 'men - '
                 ) {
-                    console.log(str);
                     str = str.substr(0, 3) + str.substr(6); // "nge - add" -> "ngeadd"
                     translated = translate(str);
                     if (translated !== str) {
