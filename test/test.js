@@ -31,6 +31,7 @@ it('should translate popular words', function() {
 
     // N-Z
     assert.strictEqual(unmix.undo('Banyak obstacle banyak serunya juga!'), 'Banyak halangan banyak serunya juga!');
+    assert.strictEqual(unmix.undo('Paling perfect sih pakai sambel!'), 'Paling sempurna sih pakai sambel!');
     assert.strictEqual(unmix.undo('Lebih prefer Windows sih daripada Mac.'), 'Lebih milih Windows sih daripada Mac.');
     assert.strictEqual(unmix.undo('Terus, perlu requirement apa aja?'), 'Terus, perlu persyaratan apa aja?');
     assert.strictEqual(unmix.undo('Terus, perlu requirements apa aja?'), 'Terus, perlu persyaratan apa aja?');

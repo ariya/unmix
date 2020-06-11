@@ -41,6 +41,7 @@
         'ngeimprove': 'memperbaiki',
         'ngejudge': 'menghakimi',
         'obstacle': 'halangan',
+        'perfect': 'sempurna',
         'prefer': 'milih',
         'requirement': 'persyaratan',
         'requirements': 'persyaratan',
