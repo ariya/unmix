@@ -13,8 +13,10 @@
     "prettier": "~1.17.1"
   },
   "scripts": {
-    "test": "mocha test/test.js && prettier --check src/unmix.js",
-    "format": "prettier --write src/unmix.js"
+    "test": "npm run unit-tests && npm run check-format",
+    "unit-tests": "mocha test/test.js",
+    "check-format": "prettier --check \"src/*.js\"",
+    "format-code": "prettier --write \"src/*.js\""
   },
   "author": "Ariya Hidayat",
   "repository": {
