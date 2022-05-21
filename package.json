@@ -21,7 +21,7 @@
   "author": "Ariya Hidayat",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ariya/unmix.git"
+    "url": "git+https://github.com/ariya/unmix.git"
   },
   "license": "MIT",
   "runkitExampleFilename": "test/example.js",
@@ -29,5 +29,12 @@
     "tabWidth": 4,
     "singleQuote": true,
     "quoteProps": "preserve"
+  },
+  "bugs": {
+    "url": "https://github.com/ariya/unmix/issues"
+  },
+  "homepage": "https://github.com/ariya/unmix#readme",
+  "directories": {
+    "test": "test"
   }
 }
